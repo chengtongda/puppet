@@ -6,9 +6,9 @@ import java.util.Map;
 import org.apache.commons.lang.StringUtils;
 
 import com.github.chengtongda.puppet.ParameterInfo;
+import com.github.chengtongda.puppet.ReflectUtils;
 import com.github.chengtongda.puppet.annotation.ToolAnno;
 import com.github.chengtongda.puppet.tools.Tool;
-import com.github.chengtongda.puppet.tools.SshTool;
 
 /**
  * puppetTool常用工具类
@@ -20,7 +20,13 @@ public class ToolUtils {
 	private static Map<String, Class<?>> tools = new HashMap<String,Class<?>>();
 	
 	static{
-		tools.put(SshTool.class.getAnnotation(ToolAnno.class).toolName(), SshTool.class);
+		for(Class<?> clazz : ReflectUtils.getClasses("com.github.chengtongda.puppet.tools")) {
+			if( Tool.class.isAssignableFrom(clazz) && clazz.isAnnotationPresent(ToolAnno.class)) {
+				tools.put(clazz.getAnnotation(ToolAnno.class).toolName(), clazz);
+			}
+		}
+		
+//		tools.put(SshTool.class.getAnnotation(ToolAnno.class).toolName(), SshTool.class);
 	}
 	
 	public static Tool getCommand(ParameterInfo param){

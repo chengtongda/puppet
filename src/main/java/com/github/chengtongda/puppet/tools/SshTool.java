@@ -25,6 +25,7 @@ public class SshTool extends Tool{
 	}
 
 	private void doSshCommand(String ip, String username, String password, String command){
+		System.out.println(String.format("===============%s===============", ip));
 		try {
 			Connection conn = new Connection(ip);
 			conn.connect();

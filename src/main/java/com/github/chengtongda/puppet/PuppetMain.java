@@ -1,6 +1,7 @@
 package com.github.chengtongda.puppet;
 
 import java.lang.reflect.Field;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -20,11 +21,7 @@ import com.github.chengtongda.puppet.tools.utils.ToolUtils;
 public class PuppetMain {
 	
 	public PuppetMain(String[] args) throws IllegalArgumentException, IllegalAccessException {
-		super();
-		
-		ParameterInfo param = parseArgs(args);
-		
-		Tool command = ToolUtils.getCommand(param);
+		Tool command = ToolUtils.getCommand(parseArgs(args));
 		
 		if(command == null){
 			System.out.println("Tools Not Found!");
