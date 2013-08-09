@@ -4,7 +4,7 @@ import com.github.chengtongda.puppet.ParameterInfo;
 
 /**
  * »ù´¡¹¤¾ß
- * @author jiangyi.ctd
+ * @author chengtongda
  *
  */
 public abstract class Tool {

@@ -2,6 +2,11 @@ package com.github.chengtongda.puppet.constants;
 
 import com.github.chengtongda.puppet.annotation.Parameter;
 
+/**
+ * 参数标示（-i -u -xxx ）
+ * @author chengtongda
+ *
+ */
 public class ParameterConstants {
 
 	@Parameter(isRequired = true, getClazz = String.class)

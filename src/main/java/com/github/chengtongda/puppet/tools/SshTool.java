@@ -12,7 +12,7 @@ import com.github.chengtongda.puppet.annotation.ToolAnno;
 
 /**
  * ssh√¸¡Ó
- * @author jiangyi.ctd
+ * @author chengtongda
  *
  */
 @ToolAnno(toolName = "cssh")

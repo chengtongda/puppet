@@ -7,7 +7,7 @@ import com.github.chengtongda.puppet.constants.ParameterConstants;
 
 /**
  * 一些参数信息
- * @author jiangyi.ctd
+ * @author chengtongda
  *
  */
 public class ParameterInfo {

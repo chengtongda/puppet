@@ -12,6 +12,11 @@ import com.github.chengtongda.puppet.constants.ParameterConstants;
 import com.github.chengtongda.puppet.tools.Tool;
 import com.github.chengtongda.puppet.tools.utils.ToolUtils;
 
+/**
+ * main
+ * @author chengtongda
+ *
+ */
 public class PuppetMain {
 	
 	public PuppetMain(String[] args) throws IllegalArgumentException, IllegalAccessException {
