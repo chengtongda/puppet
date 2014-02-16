@@ -18,7 +18,15 @@ curl -sLk https://raw.github.com/chengtongda/puppet/master/install.sh > install.
   示例:
 
 ```
+远程执行命令
 >>>./cssh 10.232.12.114 uptime
 ===============10.232.12.114===============
  18:52:02 up 129 days,  8:13,  0 users,  load average: 0.09, 0.06, 0.07
+```
+
+```
+初始化用户名密码
+>>>./init_user
+please input your username:chengtongda
+please input your passwd:xxxxx
 ```
