@@ -3,6 +3,9 @@ puppet
 
 ## puppet 是一个工具箱
 
+## 安装
+curl -sLk https://raw.github.com/chengtongda/puppet/master/install.sh > install.sh;sh install.sh
+
 ## 通用参数：
 - t: 选用的工具,目前支持[cssh]
 
@@ -21,9 +24,4 @@ puppet
 
   示例:
   
-```
->>java -jar puppet.jar -u username -p passwd -t cssh -i 10.232.12.114 -c
-uptime
-===============10.232.12.114===============
- 17:16:07 up 129 days,  6:37,  0 users,  load average: 0.07, 0.11, 0.10
-```
+  
