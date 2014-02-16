@@ -10,12 +10,16 @@ puppet
 - cssh: 到目标服务器执行命令并返回打印结果
 
   参数
+  
     u: 用户名
+    
     p: 密码
+
     i: 目标服务器ip地址
 
 
-  示例
+
+  示例:
   
 ```
 >>java -jar puppet.jar -u username -p passwd -t cssh -i 10.232.12.114 -c
