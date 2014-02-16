@@ -10,7 +10,9 @@ curl -sLk https://raw.github.com/chengtongda/puppet/master/install.sh > install.
 - cssh: 到目标服务器执行命令并返回打印结果
 
   参数：
+  
     $1: 目标服务器ip
+    
     $2: 需要执行的命令
 
   示例:
